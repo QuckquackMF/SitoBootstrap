@@ -1,0 +1,264 @@
+* {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+  }
+
+  body, html {
+    width: 100%;
+    overflow-x: hidden; /* Ensure no horizontal scrolling */
+  }
+
+  body, .container {
+    overflow-x: hidden; /* Prevent horizontal scroll for body and main containers */
+  }
+
+  /* Ensure h5 doesn't cause any scrollbars */
+  h5 {
+    overflow: visible; /* Prevent overflow on h5 titles */
+    white-space: normal; /* Prevent long text from overflowing */
+    word-wrap: break-word; /* Break long words onto the next line if needed */
+    margin: 0; /* Reset margin if necessary */
+  }
+
+  /* Additional adjustments for any other title/heading elements */
+  h1, h2, h3, h4, h5, h6 {
+    overflow: visible;
+    white-space: normal;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px; /* Adjust padding on smaller screens */
+  }
+
+  .navbar, .footer {
+    width: 100%;
+  }
+
+  .some-wide-element {
+    width: 100%;
+    max-width: 100%; /* Prevents overflow */
+  }
+
+  body {
+    overflow: visible !important; /* Remove the overflow hidden on body */
+  }
+
+  .navbar.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background-color: #f8f9fa;  /* Optional */
+  }
+
+  .navbar-brand {
+    font-family: serif;
+    font-style: italic;
+    font-size: 1.25rem;
+  }
+  .navbar {
+    background-color: #f8f9fa;
+  }
+  .navbar-logo {
+    margin-right: 15px;
+  }
+  .hero {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+  }
+  .body-background {
+      background-color: #f8f9fa;
+  }
+  .hero img {
+    max-width: 100%;
+    height: auto;
+  }
+  .hero h1 {
+    font-weight: bold;
+  }
+  .btn-download {
+    background-color: #343a40;
+    color: #fff;
+  }
+  .btn-download:hover {
+    background-color: #495057;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .section-title {
+    font-weight: bold;
+  }
+  .chapter-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .chapter-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: #6c757d;
+    cursor: pointer;
+  }
+  .chapter-list li::before {
+    content: '';
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+    width: 8px;
+    height: 8px;
+    background-color: #6c757d;
+    border-radius: 50%;
+  }
+  .chapter-list li.active {
+    font-weight: bold;
+    color: #000;
+  }
+  .chapter-list li.active::before {
+    background-color: #000;
+  }
+  .chapter-box {
+    border: 1px solid #dee2e6;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  .chapter-box h5 {
+    font-weight: bold;
+  }
+  .chapter-icon {
+    background-color: #f8f9fa;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+  .benefit-icon {
+    font-size: 3rem;
+    color: #6c757d;
+  }
+  .benefit-title {
+    font-weight: bold;
+  }
+  .testimonial img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+  .author img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .social-icons a {
+    font-size: 1.25rem;
+    margin: 0 10px;
+    color: #6c757d;
+  }
+  .social-icons a:hover {
+    color: #343a40;
+  }
+  .author h2 {
+    font-weight: bold;
+  }
+
+  .author p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .author-image {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    background-color: #f1f3f5;
+  }
+
+  .insert-emoticon-icon-1 {
+    width: 32px;
+    height: 32px;
+    background: #9FAFC1;
+  }
+
+  .footer {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 1rem 0;
+    border-top: 1px solid #dee2e6; /* Optional border at the top of footer */
+  }
+
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allows items to stack if the screen is too narrow */
+  }
+
+  .footer .social-icons a {
+    font-size: 1.25rem;
+    color: #343a40; /* Dark color for social icons */
+    margin: 0 0.5rem;
+  }
+
+  .footer .social-icons a:hover {
+    color: #495057; /* Slightly lighter color on hover */
+  }
+
+  .footer-logo img {
+    max-width: 50px; /* Control logo size */
+    text-align: center;
+  }
+
+  .footer .copyright {
+    font-size: 0.875rem;
+    color: #6c757d; /* Muted gray for copyright text */
+  }
+
+  .download-section {
+    background-color: #f1f3f5; /* Light gray background for contrast */
+    padding: 2rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #343a40; /* Dark color for title */
+    margin-bottom: 0.5rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+    color: #6c757d; /* Muted color for subtitle */
+    margin-bottom: 1.5rem;
+  }
+
+  .download-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #343a40;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+
+  .download-btn:hover {
+    background-color: #6c757d; /* Darker shade on hover */
+  }
